@@ -1,42 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.cdnfonts.com/css/product-sans");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --blueColor: rgba(66, 133, 243, 1);
+  --redColor: rgba(233, 67, 53, 1);
+  --greenColor: rgba(52, 168, 83, 1);
+  --yellowColor: rgba(248, 170, 0, 1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html {
+  font-family: "Product Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: clamp(2rem, calc(1rem + 3vw), 4rem);
 }
 
-.card {
-  padding: 2em;
+h2 {
+  font-size: clamp(1.6rem, calc(0.8rem + 2vw), 2.5rem);
 }
 
-.read-the-docs {
-  color: #888;
+h3 {
+  font-size: clamp(1rem, calc(0.6rem + 1.2vw), 1.75rem);
+}
+
+p {
+  font-size: clamp(0.875rem, calc(0.6rem + 0.8vw), 1.125rem);
 }
